@@ -292,13 +292,11 @@ class FCSA(nn.Module):
         ret.update({'temperature': 1 / logit_scale})
 
 
-        if 'sdm' in self.current_task:
-            sdm_loss = objectives.compute_sdm(epoch, i_feats, t_feats, batch['pids'], logit_scale,
-                                                           args=self.args)
-            ret.update({'sdm_loss': 1.0 * sdm_loss})
-
         if 'cmpm' in self.current_task:
-            ret.update({'cmpm_loss':objectives.compute_cmpm(i_feats, t_feats, batch['pids'])})
+            cmpm_loss = objectives.compute_cmpm(epoch, i_feats, t_feats, batch['pids'], logit_scale,
+                                                           args=self.args)
+            ret.update({'cmpm_loss': 1.0 * cmpm_loss})
+
 
         if 'id' in self.current_task:
             image_logits = self.classifier(i_feats.half()).float()
