@@ -117,7 +117,7 @@ class FCSA(nn.Module):
             nn.init.normal_(self.classifier.weight.data, std=0.001)
             nn.init.constant_(self.classifier.bias.data, val=0.0)
 
-        if 'stl' in args.loss_names :
+        if 'stl_img' in args.loss_names :
 
             # self.textPre_model = PredictionTextModel(args, self.embed_dim)
             self.imagePre_model = PredictionImgModel(args, self.embed_dim)
