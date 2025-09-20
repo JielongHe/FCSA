@@ -1,0 +1,4 @@
+#!/bin/bash
+DATASET_NAME="CUHK-PEDES"
+
+C
