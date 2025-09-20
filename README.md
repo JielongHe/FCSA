@@ -52,7 +52,7 @@ python train.py \
 --batch_size 64 \
 --MLM \
 --dataset_name $DATASET_NAME \
---loss_names 'id+sdm+mlm+pre' \
+--loss_names 'id+sdm+stl_img+stl_txt' \
 --num_epoch 60
 ```
 
