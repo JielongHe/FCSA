@@ -1,10 +1,10 @@
 
-# Text-Based Person Search via Fine-Grained Cross-Modal Semantic Alignment （FCSA）
+#  （FCSA）
 
 
 ## Highlights
 
- Existing text-based person search methods struggle with complex cross-modal interactions, failing to capture subtle semantic nuances. To address this, we propose a novel Fine-grained Cross-modal Semantic Alignment (FCSA) framework that enhances accuracy and robustness in text-based person search. FCSA introduces two key components: the Cross-Modal Reconstruction Strategy (CMRS) and the Saliency-Guided Masking Mechanism (SGMM). CMRS facilitates feature alignment by leveraging incomplete visual and textual features, promoting bidirectional reasoning across modalities, and enhancing fine-grained semantic understanding. SGMM further refines performance by dynamically focusing on salient visual patches and critical text tokens, thereby improving discriminative region perception and image-text matching precision. Our approach outperforms existing state-of-the-art methods, achieving mean Average Precision (mAP) scores of 69.72\%, 43.78\% and 48.48\% on CUHK-PEDES, ICFG-PEDES, and RSTPReid, respectively. 
+
 ![](images/architecture.jpg)
 
 
